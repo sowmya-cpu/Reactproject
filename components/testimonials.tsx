@@ -1,21 +1,19 @@
-import Image from "next/image"
+import Image from "next/image";
 
 const testimonials = [
   {
     name: "Sarah Johnson",
     role: "CEO, TechCorp",
     image: "/placeholder.svg?height=100&width=100",
-    quote:
-      "Switch Dimension transformed our business with their AI solutions. We saw a 200% increase in efficiency within months.",
+    quote: "Switch Dimension transformed our business with their AI solutions. We saw a 200% increase in efficiency within months.",
   },
   {
     name: "Michael Chen",
     role: "CTO, InnovateCo",
     image: "/placeholder.svg?height=100&width=100",
-    quote:
-      "The team at Switch Dimension is exceptional. Their AI expertise helped us stay ahead in a competitive market.",
+    quote: "The team at Switch Dimension is exceptional. Their AI expertise helped us stay ahead in a competitive market.",
   },
-]
+];
 
 export default function Testimonials() {
   return (
@@ -26,29 +24,29 @@ export default function Testimonials() {
             What Our Clients Say
           </span>
         </h2>
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.name}
-              className="relative bg-black p-6 rounded-lg overflow-hidden"
+              className="relative bg-black p-6 rounded-lg shadow-lg overflow-hidden border border-yellow-500"
               style={{
                 backgroundImage: "linear-gradient(to bottom right, rgba(250, 204, 21, 0.1), rgba(107, 114, 128, 0.1))",
-                backgroundOrigin: "border-box",
-                backgroundClip: "padding-box, border-box",
-                border: "2px solid transparent",
               }}
             >
-              <p className="text-gray-300 mb-4">{testimonial.quote}</p>
+              <p className="text-gray-300 mb-4 italic">{"“" + testimonial.quote + "”"}</p>
+              
               <div className="flex items-center">
                 <Image
-                  src={testimonial.image || "/placeholder.svg"}
+                  src={testimonial.image}
                   alt={testimonial.name}
                   width={50}
                   height={50}
-                  className="rounded-full mr-4"
+                  className="rounded-full mr-4 border border-gray-600"
+                  priority
                 />
                 <div>
-                  <p className="font-semibold">{testimonial.name}</p>
+                  <p className="font-semibold text-white">{testimonial.name}</p>
                   <p className="text-gray-400 text-sm">{testimonial.role}</p>
                 </div>
               </div>
@@ -57,6 +55,5 @@ export default function Testimonials() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-

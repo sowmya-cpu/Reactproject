@@ -5,4 +5,4 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig; // ✅ Correct, CommonJS
+module.exports = nextConfig;
