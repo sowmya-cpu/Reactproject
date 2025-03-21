@@ -10,7 +10,7 @@ export default function CTA() {
           </span>
         </h2>
         <p className="text-xl text-gray-300 mb-10">
-          Join the AI revolution and transform your business today. {"Let’s"} build the future together.
+          Join the AI revolution and transform your business today. Let&apos;s build the future together.
         </p>
         <Button
           size="lg"
