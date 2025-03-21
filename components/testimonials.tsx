@@ -38,7 +38,7 @@ export default function Testimonials() {
                 border: "2px solid transparent",
               }}
             >
-              <p className="text-gray-300 mb-4">"{testimonial.quote}"</p>
+              <p className="text-gray-300 mb-4">{testimonial.quote}</p>
               <div className="flex items-center">
                 <Image
                   src={testimonial.image || "/placeholder.svg"}
