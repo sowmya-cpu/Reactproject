@@ -37,7 +37,7 @@ export default function ContactForm() {
     return (
       <section className="py-24 px-6 lg:px-8 bg-black">
         <div className="max-w-4xl mx-auto">
-          <p className="text-center text-white text-xl">Thanks for reaching out! We'll get back to you soon.</p>
+          <p className="text-center text-white text-xl">Thanks for reaching out! We will get back to you soon.</p>
         </div>
       </section>
     )

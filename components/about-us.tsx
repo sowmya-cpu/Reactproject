@@ -15,7 +15,7 @@ export default function AboutUs() {
               industry insights to deliver tailored AI strategies that drive growth and efficiency.
             </p>
             <p className="text-gray-300">
-              We believe in the power of AI to revolutionize industries, and we're committed to guiding our clients
+              We believe in the power of AI to revolutionize industries, and we are committed to guiding our clients
               through every step of their AI journey. From concept to implementation, Switch Dimension is your trusted
               partner in navigating the exciting world of artificial intelligence.
             </p>
